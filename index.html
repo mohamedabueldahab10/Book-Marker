@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container py-5 bolder">
+            <h2 class="text-muted fs-1 fw-bold my-3 py-3">
+                Bookmarker
+            </h2>
+            <hr class="text-muted"> 
+        </div>
+        <div class="container bg-secondary bg-opacity-25 py-5 my-2 text-center d-flex flex-column justify-content-center align-items-center">
+            <h3 class="fs-3 fw-bold text-dark text-center py-3 font-arial">
+                Bookmark your favorite sites
+            </h3>
+            <p class="text-dark fs-5 fw-bold text-center font-arial my-2">
+                Site Name
+            </p>
+            <input class="w-75" type="text" class="form-control" placeholder="Bookmark Name" id="siteName">
+            <p class="text-dark fs-5 fw-bold text-center font-arial my-2">
+                Site URL
+            </p>
+            <input class="w-75" type="text" class="form-control" placeholder="Website URL" id="siteUrl">
+            <button class="btn btn-primary d-block center my-3" onclick="addSite()">Submit</button>
+        </div>
+        <div id="siteBody" class="container bg-transparent bg-opacity-25 bg-gradient h-50 py-5 px-5 my-4 mx-auto text-center">
+            <tr>
+                <td>
+                    <h2 class="text-start me-5">Site Name</h2>
+                </td>
+                
+                    <a class="btn btn-primary ms-5" href="Site URL" target="_blank">Visit</a>
+                </td>
+                <td>
+                <button class="btn btn-danger btndelete ms-3" onclick="deleteSite()">Delete</button>
+                </td>
+            </tr>
+        </div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>
